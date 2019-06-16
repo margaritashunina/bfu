@@ -2,6 +2,7 @@
 #include "base.hpp"
 
 class game{
+public:
     game(base* f, base* s);
 
     int winner(); //-1 - game is still going, 0 - both died, 1- first hero won, 2 - second hero won
