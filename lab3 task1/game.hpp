@@ -61,13 +61,13 @@ void game<hero1, hero2>::turn(int hit1_, int hit2_, int block1_, int block2_){
     if (second_.getStun() == 0){
         switch (hit2_) {
         case 1:
-            if (block1_ != 1) diff1 = second_.upper(info2);
+            if (block1_ != 1) diff1 = second_.upper(info1);
             break;
         case 2:
-            if (block1_ != 2) diff1 = second_.middle(info2);
+            if (block1_ != 2) diff1 = second_.middle(info1);
             break;
         case 3:
-            if (block1_ != 3) diff1 = second_.lower(info2);
+            if (block1_ != 3) diff1 = second_.lower(info1);
             break;
         }
     }
