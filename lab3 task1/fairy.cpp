@@ -23,8 +23,3 @@ info fairy::lower(info opponent){
     poison_ = 10;
     return info();
 }
-
-void fairy::getHit(info diff){
-    getDamage(diff.hp);
-    if (diff.stun != 0) setStun(diff.stun);
-}

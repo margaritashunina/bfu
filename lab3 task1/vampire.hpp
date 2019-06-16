@@ -5,9 +5,7 @@
 class vampire : public base{
     vampire();
 
-    info upper(info opponent);
-    info middle(info opponent);
-    info lower(info opponent);
-
-    void getHit(info diff);
+    info upper(info opponent) override;
+    info middle(info opponent) override;
+    info lower(info opponent) override;
 };

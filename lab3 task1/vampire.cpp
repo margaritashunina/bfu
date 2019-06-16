@@ -19,8 +19,3 @@ info vampire::lower(info opponent){
     int damage = (5 * getHp())/10;
     return info(damage);
 }
-
-void vampire::getHit(info diff){
-    getDamage(diff.hp);
-    if (diff.stun != 0) setStun(diff.stun);
-}

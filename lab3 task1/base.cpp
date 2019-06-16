@@ -23,3 +23,20 @@ int base::getStun(){
 int base::getHp(){
     return hp_;
 }
+
+info base::upper(info opponent){
+    return info();
+}
+
+info base::middle(info opponent){
+    return info();
+}
+
+info base::lower(info opponent){
+    return info();
+}
+
+void base::getHit(info diff){
+    getDamage(diff.hp);
+    if (diff.stun != 0) setStun(diff.stun);
+}

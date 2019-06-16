@@ -23,6 +23,12 @@ public:
     int getStun();
     int getHp();
 
+    virtual info upper(info opponent);
+    virtual info middle(info opponent);
+    virtual info lower(info opponent);
+
+    virtual void getHit(info diff);
+
 private:
     int hp_, stun_;
 };

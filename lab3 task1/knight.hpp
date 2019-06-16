@@ -5,11 +5,11 @@ class knight : public base{
 public:
     knight();
 
-    info upper(info opponent);
-    info middle(info opponent);
-    info lower(info opponent);
+    info upper(info opponent) override;
+    info middle(info opponent) override;
+    info lower(info opponent) override;
 
-    void getHit(info diff);
+    void getHit(info diff) override;
 
 private:
     int shield_;
