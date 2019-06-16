@@ -3,6 +3,7 @@
 
 
 class vampire : public base{
+public:
     vampire();
 
     info upper(info opponent) override;
